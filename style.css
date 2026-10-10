@@ -1,0 +1,140 @@
+body {
+    font-family: 'Century Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+}
+
+.discografias{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    margin-bottom: 200zpx;
+    text-align: center;
+    font-size: 400%;
+    letter-spacing: 1px;
+}
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)); */
+    grid-template-columns: repeat(9, 1fr);
+    gap: 15px;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+}
+
+.grid-container a, .grid-container img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/*                                */
+/*   PÁGINA ARTISTA POR ARTISTA   */
+/*                                */
+
+.artist-banner{
+    width: auto;
+    max-width: 50vw;
+    height: 100vh;
+    top: 0;
+    object-fit: contain;
+    position: sticky;
+    padding-left: 40px;
+}
+
+.artist-content{
+    flex: 1;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.artist-name{
+    margin-top: auto;
+    margin-bottom: 20px;
+    font-size: 200%;
+
+    display: flex;
+    /* text-align: center; */
+    /* padding: 1%; */
+    justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.artist-name h2.aka{
+    font-size: 100%;
+    font-style: italic;
+    color: #667;
+}
+
+.grid-albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 20px;
+    width: 90%;
+    max-width: 900px;
+    /* padding: 20px; */
+    /* margin: 0 auto; */
+    margin-bottom: auto;
+    overflow-y: auto;
+}
+
+.grid-albums-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    width: 90%;
+    max-width: 900px;
+    margin-bottom: auto;
+    overflow-y: auto;
+}
+
+.grid-albums a, .grid-albums img, .grid-albums-small a, .grid-albums-small img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; /* MUITO importante */
+    border-radius: 4px;
+}
+
+/* .grid-albums{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    max-height: 70vh;
+}
+
+.grid-albums img{
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+} */
+
+/* .grid-albums a, .grid-albums img{
+    /* width: calc(25% - 10px); */ 
+    /* width: 20vh;
+    height: 20vh;
+    min-width: 150px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+} */
